@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Commands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .code-block {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Installation Commands</h1>
+    <div class="code-block" id="codeBlock1">
+        <code>sudo apt update</code>
+        <button onclick="copyToClipboard('codeBlock1')">Copy</button>
+    </div>
+    <div class="code-block" id="codeBlock2">
+        <code>sudo apt install default-jre</code>
+        <button onclick="copyToClipboard('codeBlock2')">Copy</button>
+    </div>
+    <div class="code-block" id="codeBlock3">
+        <code>sudo apt install default-jdk</code>
+        <button onclick="copyToClipboard('codeBlock3')">Copy</button>
+    </div>
+    <div class="code-block" id="codeBlock4">
+        <code>java -version</code>
+        <button onclick="copyToClipboard('codeBlock4')">Copy</button>
+    </div>
+    <div class="code-block" id="codeBlock5">
+        <code>javac -version</code>
+        <button onclick="copyToClipboard('codeBlock5')">Copy</button>
+    </div>
+
+    <script>
+    function copyToClipboard(elementId) {
+        var text = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(text).then(function() {
+            alert('Copied to clipboard');
+        }).catch(function(err) {
+            alert('Failed to copy text: ', err);
+        });
+    }
+    </script>
+</body>
+</html>
