@@ -23,27 +23,36 @@
 </head>
 <body>
     <h1>Installation steps for Java on Ubuntu 22.04</h1>
-    <div class="code-block" id="codeBlock1">
+    <li>
+        <div class="code-block" id="codeBlock1">
         <code>sudo apt update</code>
         <button onclick="copyToClipboard('codeBlock1')">Copy</button>
     </div>
-    <div class="code-block" id="codeBlock2">
+    </li>
+    <li>
+        <div class="code-block" id="codeBlock2">
         <code>sudo apt install default-jre</code>
         <button onclick="copyToClipboard('codeBlock2')">Copy</button>
     </div>
-    <div class="code-block" id="codeBlock3">
+    </li>
+    <li>
+        <div class="code-block" id="codeBlock3">
         <code>sudo apt install default-jdk</code>
         <button onclick="copyToClipboard('codeBlock3')">Copy</button>
     </div>
-    <div class="code-block" id="codeBlock4">
+    </li>
+    <li>
+        <div class="code-block" id="codeBlock4">
         <code>java -version</code>
         <button onclick="copyToClipboard('codeBlock4')">Copy</button>
     </div>
-    <div class="code-block" id="codeBlock5">
+    </li>
+    <li>
+        <div class="code-block" id="codeBlock5">
         <code>javac -version</code>
         <button onclick="copyToClipboard('codeBlock5')">Copy</button>
     </div>
-
+    </li>
     <script>
     function copyToClipboard(elementId) {
         var text = document.getElementById(elementId).innerText;
