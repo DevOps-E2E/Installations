@@ -55,10 +55,11 @@
     </li>
     <h1>Link to Install Jenkins in Ubuntu20.4</h1>
     <li>
-        <div class="code-block" id="codeBlock6">
+        <a href="https://www.jenkins.io/doc/book/installing/linux/#debianubuntu"><button onclick="copyToClipboard('codeBlock6')">Click here</button></a>
+<!--         <div class="code-block" id="codeBlock6">
         <code>https://www.jenkins.io/doc/book/installing/linux/#debianubuntu</code>
         <button onclick="copyToClipboard('codeBlock6')">Copy</button>
-    </div>
+    </div> -->
     </li>
     <h1>Link to Install Git in Windows</h1>
     <p>Choose '64-bit Git for Windows Setup' standalone installer.</p>
@@ -99,7 +100,8 @@
     </li>
     <script>
     function copyToClipboard(elementId) {
-        var text = document.getElementById(elementId).innerText;
+        var codeElement = document.getElementById(elementId).getElementsByTagName('code')[0];
+        var text = codeElement.innerText;
         navigator.clipboard.writeText(text).then(function() {
             alert('Copied to clipboard');
         }).catch(function(err) {
