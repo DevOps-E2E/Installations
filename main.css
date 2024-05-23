@@ -25,6 +25,9 @@ body {
   a {
     color: #61eefb;
   }
+div{
+    color: white;
+}
 .code-block {
             position: relative;
             display: inline-block;
