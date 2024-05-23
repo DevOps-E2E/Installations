@@ -25,7 +25,7 @@ body {
   a {
     color: #61eefb;
   }
-code {
+.code-block {
             position: relative;
             display: inline-block;
             border: 1px solid #ddd;
