@@ -89,9 +89,34 @@
         <a href="https://www.oracle.com/in/java/technologies/downloads/#jdk17-windows"><button onclick="copyToClipboard('codeBlock6')">Click here</button></a>
         <p>Click on 'x64 Installer' link to download it</p>
     </li>
-    <li><p>The JDK exe file gets downloaded, click on that exe file and install JDK 17. Refer to below image:</p></li>
+    <p>The JDK exe file gets downloaded, click on that exe file and install JDK 17. Refer to below image:</p>
     <img src="images\JDK-17.png" alt="JDK-17 installed">
-    
+
+    <h1>Install Jenkins in Windows:</h1>
+    <li>
+        <a href="https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable"><button onclick="copyToClipboard('codeBlock6')">Click here to download Jenkins msi file</button></a>
+    </li>
+    <li><p>Click on the downloaded 'jenkins.msi' file. Jenkins Setup Wizard opens up as shown below:</p></li>
+    <img src="images\jenkins-1.png" alt="Jenkins wizard">
+    <li>Click on 'Next', as shown in below image:</li>
+    <img src="images\jenkins-2.png" alt="Jenkins Path confirmation">
+    <li>Click on 'Run service as localsystem'. Click on 'next'</li>
+    <img src="images\jenkins-3.png" alt="service cred">
+    <li>Check which port is available in your system to run jenkins. For instance default port of Jenkins is 8080 but my system is running another tool at 8080, so when test this port I will get the below erro:</li>
+    <img src="images\jenkins-4.png" alt="Port config">
+    <li> Hence I provided 9090 port, tested the port to see if its available, as shown below this port is free to host my Jenkins tool. Click on 'next'.</li>
+    <img src="images\jenkins-5.png" alt="Port config">
+    <li>Now search where you installed JDK in your 'Program files' directory and copy-paste that path in the Java home path section. For instance my JDK is at "C:\Program Files\Java\jdk-17" path. Hence I enter the same. Refer to below images:</li>
+    <img src="images\jenkins-6.png">
+    <img src="images\jenkins-7.png">
+    <li>If you enter the wrong JDK path, you will get the below error:</li>
+    <img src="images\jenkins-8.png">
+    <li>Click on next</li>
+    <img src="images\jenkins-9.png">
+    <li>Click on install</li>
+    <img src="images\jenkins-10.png">
+    <li>After installation, Click on finish</li>
+    <img src="images\jenkins-11.png">
     <script>
     function copyToClipboard(elementId) {
         var codeElement = document.getElementById(elementId).getElementsByTagName('code')[0];
